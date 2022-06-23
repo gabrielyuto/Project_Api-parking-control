@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: "parking-control-db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "banco123"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/Gabriel.Munakata/Documents/Projetos/Docker/parking-control-postgres-on-docker:/var/lib/postgresql/data
+
